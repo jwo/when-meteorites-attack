@@ -12,7 +12,7 @@ const Map = withGoogleMap(props => (
     {props.markers.map((marker, index) => (
       <Marker
         key={marker.id}
-        icon="/meteorite.png"
+        icon="meteorite.png"
         {...marker}
         onRightClick={() => props.onMarkerRightClick(index)}
       />

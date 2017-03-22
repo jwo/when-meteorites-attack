@@ -29,7 +29,7 @@ class App extends Component {
       }
     }, 500)
 
-    fetch("/meteorites.json")
+    fetch("meteorites.json")
       .then( (r) => r.json() )
       .then( (r) => r.filter( (f) => parseInt(f.reclat.length, 10) > 0))
       .then( (meteorites) => {
